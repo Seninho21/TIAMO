@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coderstar</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+      /* Aggiungiamo regole CSS per rendere il layout responsive */
+      @media only screen and (max-width: 600px) {
+          body {
+              padding: 10px; /* Aggiungiamo un po' di spazio intorno al contenuto */
+          }
+          #card {
+              text-align: center; /* Centriamo il contenuto */
+          }
+          .heart {
+              display: inline-block; /* Impediamo il wrapping delle cuori */
+          }
+          .polaroid {
+              width: 100%; /* Le immagini occupano l'intera larghezza */
+              margin: 10px 0; /* Spazio tra le immagini */
+          }
+      }
+  </style>
 </head>
 <body>  
     <div id="card">
