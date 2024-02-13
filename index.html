@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coderstar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <div id="card">
+      <center><h1>TI AMO</h1></center>
+      <div class="heart" id="heart1">
+        <div id="half1">
+          <div id="circle"></div>
+          <div id="rec"></div>
+        </div>
+        <div id="half2">
+          <div id="circle"></div>
+          <div id="rec"></div>
+        </div>
+      </div>
+      <div id="message">
+        <h2>Will you be my Valentine?</h2>
+      </div>
+      <div class="heart" id="heart2">
+        <div id="half1">
+          <div id="circle"></div>
+          <div id="rec"></div>
+        </div>
+        <div id="half2">
+          <div id="circle"></div>
+          <div id="rec"></div>
+        </div>
+      </div>
+      
+    </div>
+    <br><br>
+    <div id="buttonDomand">
+
+                <button class="buttonLeft" id = "yesButton" onclick="nextPage()">Yes</button>
+                <button class="button" id="noButton" onclick="moveButton()">No</button>
+                    <script>
+                
+                    //var b = document.getElementById("noButton")                    
+                    //b.addEventListener("click", hideButton());
+
+                    function nextPage() {
+                      window.location.href = "yes.html";
+                    }
+
+
+                    function moveButton() {
+                        var button = document.getElementById('noButton');
+                        var maxX = window.innerWidth - button.offsetWidth;
+                        var maxY = window.innerHeight - button.offsetHeight;
+                        var randomX = Math.floor(Math.random() * maxX);
+                        var randomY = Math.floor(Math.random() * maxY);
+                        button.style.left = randomX + 'px';
+                        button.style.top = randomY + 'px';
+                    }
+                </script> 
+
+    </div>
+                
+      <br><br><br><br><br><br><br>
+      <img style="float: left; height:444px; width:250px; " src="images/amo (7).jpg" class="polaroid"  alt="Immagine 2">
+      <img style="float: right; height:444px; width:250px;" src="images/amo (9).jpg." class="polaroid"  alt="Immagine 2">
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <img style="float: left;margin-right: 12px;" src="images/amo (2).JPG" class="polaroid"  alt="Immagine 2">      
+      <img style="float: left; margin-right: 12px;" src="images/amo (4).jpg" class="polaroid"  alt="Immagine 2">
+      <img style="float: left; margin-right: 12px;" src="images/amo1.jpg" class="polaroid"  alt="Immagine 2">
+      <img style="float: left; margin-right: 12px;" src="images/amo (5).jpg" class="polaroid"  alt="Immagine 2">
+      <img style="float: left; margin-right: 12px;" src="images/amo3.jpg" class="polaroid"  alt="Immagine 2">
+      <img style="float: right; margin-right: 12px;" src="images/amo (8).jpg" class="polaroid"  alt="Immagine 2">
+      <img style="float: right; margin-right: 20px; " src="images/amo2.jpg" class="polaroid"  alt="Immagine 2">
+
+
+      
+  </body>
+</html>
